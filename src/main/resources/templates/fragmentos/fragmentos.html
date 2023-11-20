@@ -1,0 +1,45 @@
+<!DOCTYPE html >
+<html lang="pt-br" xmlns:th="http://thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="webjars/bootstrap/css/bootstrap.min.css">
+		<title>Sistema de Creche</title>
+		<meta name="author" content="Larissa Souza">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://kit.fontawesome.com/006642858d.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans+JP|Open+Sans|Roboto&display=swap" rel="stylesheet">
+	</head>
+<body>
+
+<!-- Cabeçalho --> 
+	<header th:fragment="cabecalho">
+	
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#4682B4">
+			<a class="navbar-brand" th:href="@{/}">
+				<img src="img/lg-header.png" width="90" height="90"/>
+			</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
+       		 <span class="navbar-toggler-icon"></span>
+		</button>
+		<div id="navMobile" class="collapse navbar-collapse justify-content-center">
+				<a class="nav-item nav-link">Home</a>
+				<a class="nav-item nav-link" th:href="@{inserirCachorros}">Cadastrar</a>
+				<a class="nav-item nav-link">Pesquisar</a>
+				<a class="nav-item nav-link btn-danger">Sair</a>
+		</div>
+		</nav>
+	
+	</header>
+	
+	<!-- Footer -->
+	<footer th:fragment="rodape">
+		<div class="rodape">
+			<span>Todos os Direitos Reservados - 2023 &copy; Larissa Souza</span>
+		</div>
+	</footer>
+
+	<script src="/webjars/jquery/3.7.1/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
