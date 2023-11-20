@@ -27,7 +27,7 @@
 						<input class="form-control" placeholder="Ex.: Bolinha Pipoca" th:field="*{nomeCachorro}">
 					</div>
 				</div>
-		
+		<br>
 		<!-- Raça do Cachorro -->
 				<div class="row">
 					<div class="col-md-6 form-group offset-md-3">
@@ -38,17 +38,18 @@
 						</select>
 					</div>
 				</div>
-				
+				<br>
+		
 		<!-- Matricula do Cachorro -->
 				<div class="row">
 					<div class="col-md-6 form-group offset-md-3">
-						<label>Gerar Matricula:</label>
+						<label>Número da Matricula:</label>
 						<input  readonly ="readonly" class="form-control" id="matricula" th:field="*{matricula}">
-							<button type="button" onclick="GerarMatricula();" class="btn btn-dark" style="margin-top: 10px;">Gerar</button>
+<!-- 							<button type="button" onclick="GerarMatricula();" class="btn btn-dark" style="margin-top: 10px;">Gerar</button> -->
 					</div>
 				</div>
-				
-				
+				<br>
+				<br>
 				<!-- Sexo do Cachorro -->
 				<div class="row">
 					<div class="col-md-6 form-group offset-md-3">
@@ -58,6 +59,7 @@
 							th:value="${sexoCachorro}" th:text="${sexoCachorro}"></option>
 						</select>
 					</div>
+					<br>
 				<!-- Microchip do Cachorro -->
 				<div class="row">
 					<div class="col-md-6 form-group offset-md-3">

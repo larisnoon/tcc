@@ -36,12 +36,8 @@
 					<td th:text="${cachorros.numeroMicrochip}"></td>
 					
 					<td>
-						<a class="btn btn-primary" th:href="@{alterar/{id}(id=${cachorros.id})}">
-						
-						<i class="fas fa-edit"></i>Editar</a>
-						<a class="btn btn-primary" th:href="excluir">
-						
-						<i class="fas fa-times"></i>Excluir</a>
+						<a class="btn btn-primary" th:href="@{alterar/{id}(id=${cachorros.id})}">Editar</a>
+						<a class="btn btn-danger" th:href="@{excluir/{id}(id=${cachorros.id})}">Excluir</a>
 					
 					</td>					
 				</tr>

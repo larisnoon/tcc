@@ -57,10 +57,10 @@ public class CachorroController {
 		return mv;
 	}
 	
-	//não consegui fazer rodar. 
-//	@GetMapping("excluir/{id}")
-//	public String excluir(@PathVariable("id") Integer id) {
-//		cachorrorepositorio.deleteById(id);
-//		return "redirect:/cachorros-adicionados";
-//	}
+	@GetMapping("excluir/{id}")
+	public String excluir(@PathVariable("id") Integer id) {
+		cachorrorepositorio.deleteById(id);
+		return "redirect:/cachorros-adicionados";
+	}
+	
 }
