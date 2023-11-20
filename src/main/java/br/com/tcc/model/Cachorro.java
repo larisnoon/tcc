@@ -3,12 +3,23 @@ package br.com.tcc.model;
 import br.com.tcc.Enums.Raca;
 import br.com.tcc.Enums.SexoCachorro;
 import jakarta.persistence.Column;
-import jakarta.persistence.Entity; 
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity 
+//import javax.persistence.Column;
+//import javax.persistence.Entity;
+//import javax.persistence.EnumType;
+//import javax.persistence.Enumerated;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.GenerationType;
+//import javax.persistence.Id;
+
+
+@Entity
 public class Cachorro {
 	
 	
@@ -16,19 +27,21 @@ public class Cachorro {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	
-	@Column(name= "nomeCachorro")
+	@Column  (name= "nomeCachorro")
 	private String nomeCachorro;
 	
-	@Column(name = "raca")
+	@Column  (name = "raca")
+	@Enumerated(EnumType.STRING)
 	private Raca raca;
 	
-	@Column(name = "sexoDoCachorro")
+	@Column (name = "sexoDoCachorro")
+	@Enumerated(EnumType.STRING)
 	private SexoCachorro sexoCachorro;
 	
-	@Column(name = "microchip")
+	@Column (name = "microchip")
 	private Integer numeroMicrochip;
 	
-	@Column(name = "matricula")
+	@Column (name = "matricula")
 	private String matricula;
 	
 	public String getMatricula() {
