@@ -28,6 +28,7 @@ public class Cachorro {
 	private Integer id;
 	
 	@Column  (name= "nomeCachorro")
+	
 	private String nomeCachorro;
 	
 	@Column  (name = "raca")
