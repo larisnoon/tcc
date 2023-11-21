@@ -16,7 +16,7 @@ public class Usuario {
 	
 	
 	private String email;
-	private String usuario;
+	private String user;
 	private String senha;
 	
 	
@@ -35,11 +35,12 @@ public class Usuario {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getUsuario() {
-		return usuario;
+	
+	public String getUser() {
+		return user;
 	}
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+	public void setUser(String user) {
+		this.user = user;
 	}
 	public String getSenha() {
 		return senha;

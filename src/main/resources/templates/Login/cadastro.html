@@ -22,23 +22,21 @@
 				<form method="post" th:object="${usuario}" action="salvarUsuario">
 				
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="email" th:field="*{email}" >
+						<input type="email" class="form-control" placeholder="email" th:field="*{email}" >
 					</div>
 					
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="username" th:field="*{usuario}" >
+						<input type="text" class="form-control" placeholder="username" th:field="*{user}" >
 					</div>
 					<div class="form-group">
 						<input type="password" class="form-control" placeholder="insira sua senha" th:field="*{senha}"> 
 					</div> 
 				
-				</form>
-				<div class="cadastro">
-					<a href="#">Não tem cadastro? Clique aqui!</a>
-				</div>
+				
 				
 				<button type="submit" class="btn btn-primary">Cadastrar</button>
 				<button type="button" class="btn btn-info">Voltar</button>
+			</form>
 			</div>
 		</div>
 	
