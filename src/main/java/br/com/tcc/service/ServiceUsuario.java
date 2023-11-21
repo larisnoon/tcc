@@ -34,4 +34,10 @@ public class ServiceUsuario {
 		repositorioUsuario.save(user);
 		
 	}
+	
+	public Usuario loginUser(String user, String senha) throws ServiceExc{
+		
+		Usuario userLogin = repositorioUsuario.buscarLogin(user, senha);
+		return userLogin;
+	}
 }
